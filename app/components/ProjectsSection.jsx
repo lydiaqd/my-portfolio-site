@@ -1,5 +1,6 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+"use client";
+import React, { useState, useRef } from "react";
+import ProjectCard from "./ProjectCard";
 
 const projectsData = [
   {
@@ -56,16 +57,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  ];
-  
+];
 
-const Projects = () => {
+const ProjectsSection = () => {
   return (
     <>
-    <h2>Projects</h2>
-    <div>{projectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} />)}</div>
-    </>
+<h2>My Projects</h2>
+<div>{projectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} />)}</div>
+</>
   )
 }
 
-export default Projects
+export default ProjectsSection;
