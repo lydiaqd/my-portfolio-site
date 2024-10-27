@@ -23,9 +23,27 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-            <form className="flex flex-col gap-4">
-                <label htmlFor="email" type="email" className="text-white">Your email</label>
-                <input type="email" id="email" required placeholder="jacob@google.com"/>
+            <form className="flex flex-col">
+                <div>
+                    Your Email
+                <label htmlFor="email" type="email" className="text-white block text-sm font-medium">Your email</label>
+                <input 
+                type="email" 
+                id="email" 
+                required 
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="jacob@google.com"
+                />
+                </div>
+                    Subject
+                <label htmlFor="email" type="email" className="text-white block text-sm font-medium">Your email</label>
+                <input 
+                type="text" 
+                id="subject" 
+                required 
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Just saying hi"
+                />
             </form>
         </div>
     </section>
